@@ -10,7 +10,17 @@ class Array
             return(null);
         }
 
+        //if (size == 0)
+        //{
+        //    Console.WriteLine();
+        //    return(null);
+        //}
         int[] array = new int[size];
+        if (size == 0)
+            {
+                Console.WriteLine();
+                return(new int[size]);
+            }
         for (int i = 0; i < size; i++)
         {
             array[i] = i;

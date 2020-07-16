@@ -11,8 +11,7 @@ class Array
             Console.WriteLine("Index out of range");
             return(-1);
         }
-        for (i = 0; i < index; i++)
-            ;
-        return(array[i]);
+        else
+            return(array[index]);
     }
 }

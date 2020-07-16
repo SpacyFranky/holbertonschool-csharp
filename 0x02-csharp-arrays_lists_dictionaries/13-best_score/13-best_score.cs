@@ -8,7 +8,7 @@ class Dictionary
         if (myList.Count == 0)
             return("None");
 
-        int max = int.MinValue;;
+        int max = int.MinValue;
         string key = "";
         foreach(var item in myList)
         {

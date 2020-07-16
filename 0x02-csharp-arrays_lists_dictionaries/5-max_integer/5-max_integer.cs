@@ -11,7 +11,7 @@ class List
             return(-1);
         }
 
-        int m = 0;
+        int m = int.MinValue;
         foreach(int i in myList)
         {
             if (i > m)

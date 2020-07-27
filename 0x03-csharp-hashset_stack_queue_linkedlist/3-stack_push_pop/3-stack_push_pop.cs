@@ -12,7 +12,7 @@ class MyStack
             Console.WriteLine("Top item: {0}", aStack.Peek());
             if(aStack.Contains(search))
             {
-                Console.WriteLine("Stack contains {0}: {1}", search, true);
+                Console.WriteLine("Stack contains \"{0}\": {1}", search, aStack.Contains(search));
                 int index = 0;
                 foreach(var i in aStack)
                 {
@@ -25,7 +25,7 @@ class MyStack
                 aStack.Push(newItem);
             }
             else
-                Console.WriteLine("Stack contains {0}: {1}", search, false);
+                Console.WriteLine("Stack contains \"{0}\": {1}", search, aStack.Contains(search));
         }
         return(aStack);
     }

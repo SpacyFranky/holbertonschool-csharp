@@ -8,7 +8,6 @@ class MyStack
         if(aStack.Count == 0)
             Console.WriteLine("Stack is empty");
         else
-        {
             Console.WriteLine("Top item: {0}", aStack.Peek());
 
         if(aStack.Contains(search))
@@ -22,7 +21,7 @@ class MyStack
             }
             else
                 Console.WriteLine("Stack contains \"{0}\": {1}", search, aStack.Contains(search));
-        }
+
         return(aStack);
     }
 }

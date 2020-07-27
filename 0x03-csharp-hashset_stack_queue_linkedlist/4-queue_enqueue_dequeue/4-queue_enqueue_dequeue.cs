@@ -7,19 +7,19 @@ class MyQueue
         Console.WriteLine("Number of items: {0}", aQueue.Count);
         
         if(aQueue.Count > 0)
-            Console.WriteLine("Top item: {0}", aQueue.Peek());
+            Console.WriteLine("First item: {0}", aQueue.Peek());
         else
-            Console.WriteLine("Stack is empty");
+            Console.WriteLine("Queue is empty");
 
         if(aQueue.Contains(search))
-                Console.WriteLine("Stack contains \"{0}\": {1}", search, aQueue.Contains(search));
+                Console.WriteLine("Queue contains \"{0}\": {1}", search, aQueue.Contains(search));
             else
-                Console.WriteLine("Stack contains \"{0}\": {1}", search, aQueue.Contains(search));
+                Console.WriteLine("Queue contains \"{0}\": {1}", search, aQueue.Contains(search));
 
         if(aQueue.Contains(search))
         {
             while (aQueue.Contains(search))
-                    aQueue.Dequeue();
+                aQueue.Dequeue();
         }
 
         aQueue.Enqueue(newItem);

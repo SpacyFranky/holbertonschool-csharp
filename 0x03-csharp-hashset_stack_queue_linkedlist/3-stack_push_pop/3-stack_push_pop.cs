@@ -10,18 +10,14 @@ class MyStack
         else
         {
             Console.WriteLine("Top item: {0}", aStack.Peek());
-            if(aStack.Contains(search))
+
+        if(aStack.Contains(search))
             {
                 Console.WriteLine("Stack contains \"{0}\": {1}", search, aStack.Contains(search));
-                int index = 0;
-                foreach(var i in aStack)
+                while (aStack.Contains(search))
                 {
-                    if(i == search)
-                        break;
-                    index += 1;
-                }
-                while (aStack.Count >= index)
                     aStack.Pop();
+                }
                 aStack.Push(newItem);
             }
             else

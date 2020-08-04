@@ -13,10 +13,13 @@ namespace MyMath
         /// </summary>
         public static int Max(List<int> nums)
         {
+            if (nums == null)
+                return(0);
+
             if (nums.Count == 0)
                 return(0);
 
-            int big = 0;
+            int big = nums[0];
             foreach (int item in nums)
             {
                 if (big <= item)

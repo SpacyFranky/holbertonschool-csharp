@@ -38,5 +38,11 @@ namespace Text.Tests
         {
             Assert.AreEqual(2, Str.CamelCase("hello there Friend"));
         }
+
+        [Test]
+        public void Test6()
+        {
+            Assert.AreEqual(4, Str.CamelCase("hello There Friend Howdy"));
+        }
     }
 }

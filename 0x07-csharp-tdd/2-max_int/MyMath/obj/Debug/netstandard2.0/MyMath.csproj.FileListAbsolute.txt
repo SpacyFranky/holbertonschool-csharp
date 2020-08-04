@@ -1,0 +1,10 @@
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath\bin\Debug\netstandard2.0\MyMath.xml
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath\bin\Debug\netstandard2.0\MyMath.deps.json
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath\bin\Debug\netstandard2.0\MyMath.dll
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath\bin\Debug\netstandard2.0\MyMath.pdb
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath\obj\Debug\netstandard2.0\MyMath.csprojAssemblyReference.cache
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath\obj\Debug\netstandard2.0\MyMath.csproj.CoreCompileInputs.cache
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath\obj\Debug\netstandard2.0\MyMath.AssemblyInfoInputs.cache
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath\obj\Debug\netstandard2.0\MyMath.AssemblyInfo.cs
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath\obj\Debug\netstandard2.0\MyMath.dll
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\2-max_int\MyMath\obj\Debug\netstandard2.0\MyMath.pdb

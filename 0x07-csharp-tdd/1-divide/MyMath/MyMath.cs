@@ -2,8 +2,14 @@
 
 namespace MyMath
 {
+    /// <summary>
+    ///
+    /// </summary>
     public class Matrix
     {
+        /// <summary>
+        ///
+        /// </summary>
         public static int[,] Divide(int[,] matrix, int num)
         {
             if (matrix == null)
@@ -19,7 +25,7 @@ namespace MyMath
                     }
                     catch
                     {
-                        throw new System.ArgumentException("Num cannot be 0");
+                        Console.WriteLine("Num cannot be 0");
                         return(null);
                     }
             }

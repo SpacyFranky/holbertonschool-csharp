@@ -4,5 +4,15 @@
         <name>MyMath</name>
     </assembly>
     <members>
+        <member name="T:MyMath.Matrix">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:MyMath.Matrix.Divide(System.Int32[0:,0:],System.Int32)">
+             <summary>
+            
+             </summary>
+        </member>
     </members>
 </doc>

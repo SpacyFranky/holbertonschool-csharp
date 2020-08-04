@@ -10,6 +10,12 @@ namespace Text.Tests
         }
 
         [Test]
+        public void Test0()
+        {
+            Assert.AreEqual(0, Str.CamelCase(null));
+        }
+
+        [Test]
         public void Test1()
         {
             Assert.AreEqual(0, Str.CamelCase(""));

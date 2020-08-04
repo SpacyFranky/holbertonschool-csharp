@@ -13,6 +13,9 @@ namespace Text
         /// </summary>
         public static int CamelCase(string s)
         {
+            if (s == null)
+                return(0);
+
             int words = 0;
             if (s.Length == 0)
                 return(0);

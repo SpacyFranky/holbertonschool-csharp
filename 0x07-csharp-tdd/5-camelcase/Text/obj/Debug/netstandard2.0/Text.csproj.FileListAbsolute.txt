@@ -1,0 +1,10 @@
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\5-camelcase\Text\obj\Debug\netstandard2.0\Text.csprojAssemblyReference.cache
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\5-camelcase\Text\obj\Debug\netstandard2.0\Text.csproj.CoreCompileInputs.cache
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\5-camelcase\Text\obj\Debug\netstandard2.0\Text.AssemblyInfoInputs.cache
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\5-camelcase\Text\obj\Debug\netstandard2.0\Text.AssemblyInfo.cs
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\5-camelcase\Text\bin\Debug\netstandard2.0\Text.xml
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\5-camelcase\Text\bin\Debug\netstandard2.0\Text.deps.json
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\5-camelcase\Text\bin\Debug\netstandard2.0\Text.dll
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\5-camelcase\Text\bin\Debug\netstandard2.0\Text.pdb
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\5-camelcase\Text\obj\Debug\netstandard2.0\Text.dll
+F:\Holberton\Projects\holbertonschool-csharp\0x07-csharp-tdd\5-camelcase\Text\obj\Debug\netstandard2.0\Text.pdb

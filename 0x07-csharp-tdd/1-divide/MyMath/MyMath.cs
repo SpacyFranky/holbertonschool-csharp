@@ -3,12 +3,12 @@
 namespace MyMath
 {
     /// <summary>
-    ///
+    /// Matrix class
     /// </summary>
     public class Matrix
     {
         /// <summary>
-        ///
+        /// Dividing all elements of a matrix
         /// </summary>
         public static int[,] Divide(int[,] matrix, int num)
         {

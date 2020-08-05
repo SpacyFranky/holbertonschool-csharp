@@ -22,13 +22,10 @@ namespace Text
             
             if (char.IsLower(s[0]))
             {
-                for (int i = 0 ; i < s.Length; i++)
+                for (int i = 1 ; i < s.Length; i++)
                 {
-                    if (s[i] == ' ')
-                    {
-                        if ((i+1 < s.Length) && (char.IsUpper(s[i+1])))
-                            words += 1;
-                    }
+                    if (char.IsUpper(s[i]))
+                        words += 1;
                 }
                 return(words+1);
             }

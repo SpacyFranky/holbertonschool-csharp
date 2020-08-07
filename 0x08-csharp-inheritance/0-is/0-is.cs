@@ -3,7 +3,7 @@
 /// <summary>
 /// Object Class
 /// </summary>
-class Obj
+public class Obj
 {
     /// <summary>
     /// Returns True if the object is an int, otherwise Flase.

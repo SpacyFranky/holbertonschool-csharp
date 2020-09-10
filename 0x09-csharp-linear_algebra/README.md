@@ -1,5 +1,6 @@
 # 0x09. C# - Linear Algebra
 # Learning Objectives
+```
 * What is linear algebra
 * What is a radian
 * What is a vector
@@ -17,3 +18,4 @@
 * What is the zero matrix
 * What is a determinant and how to calculate it
 * What is the inverse of a matrix and how to calculate it
+```

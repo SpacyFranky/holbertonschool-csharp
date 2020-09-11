@@ -13,12 +13,12 @@ class VectorMath
     {
         if (vector.Length == 2 || vector.Length == 3)
         {
-            doube v = 0;
+            double v = 0;
             foreach(double i in vector)
             {
                 v += Math.Pow(i, 2);
             }
-            v = Math.sqrt(v);
+            v = Math.Sqrt(v);
             return(Math.Round(v, 2));
         }
         else

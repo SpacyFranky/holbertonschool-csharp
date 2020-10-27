@@ -60,20 +60,14 @@ public class Queue<T>
     /// </summary>
     public void Enqueue(T value)
     {
+        Node n = new Node(value);
+        n.Value = value;
+        n.Next = null;
+
         if (head == null)
-        {
-            Node n = new Node(value);
-            n.Next = null;
             head = n;
-            count = Count();
-        }
-        /*else
-        {
-            Node n = new Node(t);
-            n.Next = null;
-            head = n;
-            count = Count();
-        }*/
+
+        head.Next = n;
     }
 
     /// <summary>

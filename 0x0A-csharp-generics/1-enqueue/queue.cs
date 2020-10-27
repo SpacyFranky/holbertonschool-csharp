@@ -10,33 +10,30 @@ public class Queue<T>
     /// </summary>
     public class Node
     {
-        private T value;
         /// <summary>
-        /// Public Value
+        /// Node value property
         /// </summary>
-        public T Value
+        public T value
         {
-            get { return value; }
-            set { value = default(T); }
-        }
-
-        private Node next;
-        /// <summary>
-        /// Public Next
-        /// </summary>
-        public Node Next
-        {
-            get { return next; }
-            set { next = null; }
+            get;
+            set;
         }
 
         /// <summary>
-        ///
+        /// Node next property
+        /// </summary>
+        public Node next
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Node Constructor
         /// </summary>
         public Node(T value)
         {
-            this.Value = value;
-            this.Next = null;
+            this.value = value;
         }
     }
 
@@ -50,9 +47,15 @@ public class Queue<T>
     }
 
 
-    Node head;
-    Node tail;
-    int count;
+    /// <summary>
+    /// Head of the queue
+    /// </summary>
+    public Node head { get; set; }
+    /// <summary>
+    /// Tail of the queue
+    /// </summary>
+    public Node tail { get; set; }
+    private int count;
 
     /// <summary>
     /// Public method that creates a new Node and adds
@@ -61,13 +64,17 @@ public class Queue<T>
     public void Enqueue(T value)
     {
         Node n = new Node(value);
-        n.Value = value;
-        n.Next = null;
 
-        if (head == null)
+        if (head == null && tail == null)
+        {
             head = n;
-
-        head.Next = n;
+            tail = n;
+        }
+        else
+        {
+            tail.next = n;
+            tail = tail.next;
+        }
     }
 
     /// <summary>
@@ -78,10 +85,11 @@ public class Queue<T>
     {
         Node current = head;
 
+        count = 0;
         while (current != null)
         {
             count++;
-            current = current.Next;
+            current = current.next;
         }
 
         return(count);

@@ -78,7 +78,7 @@ public class Decoration : Base, IInteractive, IBreakable
     /// <summary>
     /// Public bool object
     /// </summary>
-    public bool isQuestItem;
+    public bool isQuestItem { get; set; }
 
     /// <summary>
     /// Public int object
@@ -88,16 +88,16 @@ public class Decoration : Base, IInteractive, IBreakable
     /// <summary>
     /// Constructor
     /// </summary>
-    public Decoration(string name = "Decoration", int durability = 1, bool isQuestItem = false)
+    public Decoration(string value = "Decoration", int number = 1, bool item = false)
     {
-        this.name = name;
+        name = value;
 
-        if (durability <= 0)
+        if (number <= 0)
             throw new System.ArgumentException("Durability must be greater than 0");
         else
-            this.durability = durability;
+            durability = number;
 
-        this.isQuestItem = isQuestItem;
+        isQuestItem = item;
     }
 
     /// <summary>
@@ -105,13 +105,17 @@ public class Decoration : Base, IInteractive, IBreakable
     /// </summary>
     public void Interact()
     {
-        if (this.durability <= 0)
-            Console.WriteLine("The {0} has been broken.", this.name);
+        if (durability <= 0)
+            Console.WriteLine("The {0} has been broken.", name);
 
-        else if (this.isQuestItem == true)
-            Console.WriteLine("You look at the {0}. There's a key inside.", this.name);
-        else if (this.isQuestItem == false)
-            Console.WriteLine("You look at the {0}. Not much to see here.", this.name);
+        else
+        {
+            if (isQuestItem == true)
+                Console.WriteLine("You look at the {0}. There's a key inside.", name);
+        
+            else
+                Console.WriteLine("You look at the {0}. Not much to see here.", name);
+        }
     }
 
     /// <summary>
@@ -119,13 +123,13 @@ public class Decoration : Base, IInteractive, IBreakable
     /// </summary>
     public void Break()
     {
-        this.durability--;
+        durability--;
 
-        if (this.durability > 0)
-            Console.WriteLine("You hit the {0}. It cracks.", this.name);
-        if (this.durability == 0)
-            Console.WriteLine("You smash the {0}. What a mess.", this.name);
+        if (durability > 0)
+            Console.WriteLine("You hit the {0}. It cracks.", name);
+        else if (durability == 0)
+            Console.WriteLine("You smash the {0}. What a mess.", name);
         else
-            Console.WriteLine("The {0} is already broken.", this.name);
+            Console.WriteLine("The {0} is already broken.", name);
     }
 }

@@ -88,9 +88,6 @@ public class Decoration : Base, IInteractive, IBreakable
     /// <summary>
     /// Class Constructor
     /// </summary>
-    /// <param name="name"></param>
-    /// <param name="durability"></param>
-    /// <param name="isQuestItem"></param>
     public Decoration(string name = "Decoration", int durability = 1, bool isQuestItem = false)
     {
         if (durability <= 0)

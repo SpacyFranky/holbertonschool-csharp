@@ -54,12 +54,9 @@ public class Door : Base, IInteractive
     /// <summary>
     /// Door constructor
     /// </summary>
-    public Door(string value)
+    public Door(string value = "Door")
     {
-        if (value == null || value == "")
-            name = "Door";
-        else
-            name = value;
+        name = value;
     }
 
     /// <summary>

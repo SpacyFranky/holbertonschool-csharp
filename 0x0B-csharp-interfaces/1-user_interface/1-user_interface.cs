@@ -21,7 +21,7 @@ public abstract class Base
 }
 
 /// <summary>
-/// interface
+/// Interface
 /// </summary>
 interface IInteractive
 {
@@ -29,7 +29,7 @@ interface IInteractive
 }
 
 /// <summary>
-/// interface
+/// Interface
 /// </summary>
 interface IBreakable
 {
@@ -52,6 +52,16 @@ interface ICollectable
 public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
     /// <summary>
+    /// Public object
+    /// </summary>
+    public int durability { get; set; }
+
+    /// <summary>
+    /// Public object
+    /// </summary>
+    public bool isCollected { get; set; }
+
+    /// <summary>
     /// Public method Interact
     /// </summary>
     public void Interact()
@@ -60,10 +70,6 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable
     }
 
     /// <summary>
-    /// Public object
-    /// </summary>
-    public int durability { get; set; }
-    /// <summary>
     /// Public method Break
     /// </summary>
     public void Break()
@@ -71,10 +77,6 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable
 
     }
 
-    /// <summary>
-    /// Public object
-    /// </summary>
-    public bool isCollected { get; set; }
     /// <summary>
     /// Public method Collect
     /// </summary>

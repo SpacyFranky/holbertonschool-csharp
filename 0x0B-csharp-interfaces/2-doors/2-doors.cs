@@ -56,7 +56,7 @@ public class Door : Base, IInteractive
     /// </summary>
     public Door(string value)
     {
-        if (name is null)
+        if (value == null || value == "")
             name = "Door";
         else
             name = value;

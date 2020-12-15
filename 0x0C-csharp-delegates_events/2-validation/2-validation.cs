@@ -22,7 +22,6 @@ public class Player
     {
         if (damage < 0)
         {
-            this.hp = 0;
             Console.WriteLine("{0} takes 0 damage!", this.name);
         }
         else
@@ -40,7 +39,6 @@ public class Player
     {
         if (heal < 0)
         {
-            this.hp = 0;
             Console.WriteLine("{0} heals 0 HP!", this.name);
         }
         else

@@ -46,7 +46,7 @@ public class Player
         else
         {
             this.hp += heal;
-            Console.WriteLine("{0} heals {1} HP", this.name, heal);
+            Console.WriteLine("{0} heals {1} HP!", this.name, heal);
         }
     }
 

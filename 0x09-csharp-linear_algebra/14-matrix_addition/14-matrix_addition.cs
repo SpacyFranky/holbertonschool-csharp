@@ -12,7 +12,8 @@ class MatrixMath
     {
         double[,] new_matrix = new double[,] { {-1} };
 
-        if ((matrix1.GetLength(0) == 2 && matrix1.GetLength(1) == 2) || (matrix1.GetLength(0) == 3 && matrix1.GetLength(1) == 3))
+        if ((matrix1.GetLength(0) == 2 && matrix1.GetLength(1) == 2) || (matrix1.GetLength(0) == 3 && matrix1.GetLength(1) == 3)
+            && (matrix1.GetLength(0) == matrix2.GetLength(0)))
         {
             double[,] matrix = new double[matrix1.GetLength(0), matrix1.GetLength(1)];
             for(int i = 0; i < matrix1.GetLength(0); i++)

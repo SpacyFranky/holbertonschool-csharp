@@ -8,7 +8,7 @@ public abstract class Base
     /// <summary>
     /// Public attribute name
     /// </summary>
-    public string name;
+    public string name { get; set; }
 
     /// <summary>
     /// Public method that prints name and type

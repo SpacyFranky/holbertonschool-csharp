@@ -4,10 +4,7 @@
 /// Base class
 /// </summary>
 public abstract class Base{
-    /// <summary>
-    /// Name property
-    /// </summary>
-    public string name {get; set;}
+    private string name {get; set;}
     /// <summary>
     /// Overrides ToString Method
     /// </summary>
@@ -59,6 +56,11 @@ public interface ICollectable{
 /// Used for test purpose
 /// </summary>
 public class TestObject : Base, IInteractive, IBreakable, ICollectable{
+
+    /// <summary>
+    /// Name property
+    /// </summary>
+    public string name {get; set;}
 
     /// <summary>
     /// Used for item durability

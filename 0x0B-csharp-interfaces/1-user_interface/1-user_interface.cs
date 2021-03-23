@@ -58,11 +58,6 @@ public interface ICollectable{
 public class TestObject : Base, IInteractive, IBreakable, ICollectable{
 
     /// <summary>
-    /// Name property
-    /// </summary>
-    public string name {get; set;}
-
-    /// <summary>
     /// Used for item durability
     /// </summary>
     /// <value>Getter and setter</value>
@@ -72,6 +67,10 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable{
     /// </summary>
     /// <value></value>
     public bool isCollected {get; set;}
+    /// <summary>
+    /// Name property
+    /// </summary>
+    public string name {get; set;}
     /// <summary>
     /// Used for interaction
     /// </summary>
